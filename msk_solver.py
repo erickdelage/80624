@@ -6,8 +6,6 @@ import warnings
 import time
 from .lp import Solution
 
-from rsome import grb_solver as grb
-
 def fix_quad_cone_bug(form):
 # This function fixes the quadratic cone constraints so that the positive root is used instead of the negative
 # We therefore simply replace the root variable with its negative version
